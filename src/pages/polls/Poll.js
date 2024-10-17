@@ -13,14 +13,14 @@ const Poll = ({ dispatch, authedUser, users, questions }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const ques = Object.values(questions).find((ques) => ques.id === id);
-    if (ques) {
-      setAuthor(users[ques.author]);
-      setQuestion(ques);
-      setIsVotedOne(ques.optionOne.votes.includes(authedUser.id));
-      setIsVotedTwo(ques.optionTwo.votes.includes(authedUser.id));
+    const question = Object.values(questions).find((question) => question.id === id);
+    if (question) {
+      setAuthor(users[question.author]);
+      setQuestion(question);
+      setIsVotedOne(question.optionOne.votes.includes(authedUser.id));
+      setIsVotedTwo(question.optionTwo.votes.includes(authedUser.id));
     }
-    if (!authedUser || !ques) {
+    if (!authedUser || !question) {
       navigate("/404");
     }
   }, [authedUser, questions, users, id, navigate]);
