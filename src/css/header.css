@@ -1,0 +1,129 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #2dd4bf, #0ea5e9, #2563eb);
+    padding: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    color: white;
+    margin-right: 1.5rem;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.025em;
+}
+
+.menu-button {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    width: 100%;
+}
+
+.nav-links a {
+    display: block;
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fde047;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    space-x: 1rem;
+}
+
+.user-avatar {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 9999px;
+    border: 2px solid white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.username {
+    font-weight: 500;
+    color: white;
+}
+
+.logout-button {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: #0d9488;
+    border: 1px solid white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #0d9488;
+    color: white;
+}
+
+@media (min-width: 1024px) {
+    .menu-button {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        width: auto;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin-top: 0;
+        margin-right: 1rem;
+    }
+
+    .user-info {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 1023px) {
+    .menu-button {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 0.75rem;
+        border: 1px solid white;
+        border-radius: 0.25rem;
+        color: white;
+        background-color: transparent;
+    }
+
+    .menu-button:hover {
+        background-color: white;
+        color: #0d9488;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+    }
+}

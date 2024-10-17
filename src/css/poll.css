@@ -1,0 +1,118 @@
+.poll-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #f9fafb;
+    min-height: 100vh;
+}
+
+.poll-card {
+    width: 100%;
+    max-width: 42rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+}
+
+.poll-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.author-avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.author-avatar img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 9999px;
+    border: 2px solid #d1d5db;
+}
+
+.poll-question {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #374151;
+    margin-bottom: 1.5rem;
+}
+
+.poll-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .poll-options {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.poll-option {
+    padding: 1rem;
+    border-radius: 0.375rem;
+    text-align: center;
+}
+
+.poll-option.voted {
+    background-color: #10b981;
+    color: white;
+}
+
+.poll-option.not-voted {
+    background-color: #e5e7eb;
+}
+
+.option-text {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.vote-button {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.vote-button:hover {
+    background-color: #2563eb;
+}
+
+.vote-results {
+    color: #1f2937;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.back-to-home {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.back-to-home a {
+    background-color: #6b7280;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.back-to-home a:hover {
+    background-color: #4b5563;
+}

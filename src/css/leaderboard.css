@@ -1,0 +1,95 @@
+.leaderboard-container {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    padding: 1rem;
+}
+
+.leaderboard-table-container {
+    width: 100%;
+    max-width: 56rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+}
+
+.leaderboard-table {
+    width: 100%;
+    font-size: 0.875rem;
+    text-align: left;
+    color: #4b5563;
+}
+
+.leaderboard-table thead {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #374151;
+    background-color: #e5e7eb;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.leaderboard-table th {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+}
+
+.leaderboard-table tbody tr {
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.3s;
+}
+
+.leaderboard-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.leaderboard-table td {
+    padding: 1rem 1.5rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    background-color: #d1d5db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+}
+
+.user-details {
+    min-width: 0;
+    flex: 1;
+}
+
+.user-name {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-id {
+    color: #6b7280;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.score {
+    text-align: center;
+    font-weight: 500;
+}
